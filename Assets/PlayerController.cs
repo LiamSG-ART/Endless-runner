@@ -28,11 +28,11 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKey(KeyCode.LeftShift))
         {
-            maxSpeed = 10.0f;
+            maxSpeed = 20.0f;
         }
         else
         {
-            maxSpeed = 5.0f;
+            maxSpeed = 10.0f;
         }
 
 
@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true) 
         {
-            playerObject.AddForce(new Vector2(0.0f, 500.0f));
+            playerObject.AddForce(new Vector2(0.0f, 550.0f));
         }
     }
 
