@@ -13,19 +13,26 @@ public class PlayerController : MonoBehaviour
 
     //Create a reference to the Rigidbody 2D so we can manipulate it
     Rigidbody2D playerObject;
-
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         //Find the Rigidbody2D component that is attached to the same object as this script
         playerObject = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        
+
         //Create a 'float' that will be equal to the players horizontal input
         float movementValueX = 1.0f;
+
+        anim.SetFloat("Speed", Mathf.Abs(movementValueX));
+        anim.SetBool("IsOnGround", isOnGround);
 
         if(Input.GetKey(KeyCode.LeftShift))
         {
