@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Vidyagame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Retry screen.unity
+    guid: 87743813a2a09d546bcb8c13d932203f
   m_configObjects: {}
